@@ -67,6 +67,9 @@ a {
 a:hover{
   background:rgba(0,0,0,0.9);
 }
+li:last-child {
+  color: plum;
+}
 li {
   list-style     : none;
   padding-bottom : 10px;
@@ -83,10 +86,22 @@ button {
 blockquote {
   font-family : 'Cedarville Cursive', cursive;
 }
-@media screen and (max-width: 500px) {
-  div{width:70%;}
+@media screen and (max-width: 680px) {
   #polina {
-    background-color: red;
+    width: 45%;
+  }
+  #polina h1 {
+    font-size: 15px;
+  }
+  #polina blockquote {
+    font-size: 12px;
+  }
+  .fa {
+    font-size: 8px;
+  }
+  li:before {
+    font: FontAwesome;
+    content: "\f004";
   }
 }
 
